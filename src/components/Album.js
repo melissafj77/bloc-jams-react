@@ -30,7 +30,21 @@ import albumData from './../data/albums';
               <col id="song-title-column" />
               <col id="song-duration-column" />
             </colgroup>  
-            <tbody>
+            <tbody>{
+              this.state.album.songs.map( (song, index) => 
+              <tr className="song" key={index}>
+                <td>
+                  <button>
+                    <span className="Song-number">{[index+1]}</span>
+                    <span><i className= "icon ion-play"/></span>
+                    <span><i className = "icon ion-pause"/></span>
+                  </button>
+                </td>
+                <td className="song-title">{song.title}</td>
+                <td className="song-duration">{song.duration}</td>
+              </tr>
+              )
+              }
             </tbody>
           </table>
         </section>
