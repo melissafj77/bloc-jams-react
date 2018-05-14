@@ -14,6 +14,7 @@ import PlayerBar from './PlayerBar';
         currentSong: album.songs[0],
         currentTime: 0,
         duration: album.songs[0].duration,
+        volume: 0.5,
         isPlaying: false
 
       };
@@ -88,6 +89,27 @@ import PlayerBar from './PlayerBar';
       this.setState({ currentTime: newTime });
     }
   
+    handleVolumeChange(e) {
+      const newVolume = e.target.value;
+      this.audioElement.volume = newVolume;
+      this.setState({ volume: newVolume });
+    }
+  
+    formatTime(time) {
+      if (isNaN(time) === true || time === undefined ) {
+        return '-:--';
+      }
+      var minutes = Math.floor(time / 60);
+      var seconds = time - minutes * 60;
+      minutes = minutes.toString();
+       if (seconds < 10) {
+        seconds = Math.floor(seconds.toString());
+        return minutes + ":0" + seconds;
+      } else {
+        seconds = Math.floor(seconds.toString());
+        return minutes + ":" + seconds;
+      }
+    }
 
     render() {
       return (
@@ -132,7 +154,9 @@ import PlayerBar from './PlayerBar';
            handlePrevClick={() => this.handlePrevClick()}
            handleNextClick={()=> this.handleNextClick()}
            handleTimeChange={(e) => this.handleTimeChange(e)}
-         />
+           handleVolumeChange={(e) => this.handleVolumeChange(e)}
+           formatTime={(time) => this.formatTime(time)}
+           />
          </section>
       );
     }
