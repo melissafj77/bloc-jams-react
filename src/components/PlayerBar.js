@@ -10,7 +10,7 @@ class PlayerBar extends Component{
            </button>
            <button id="play-pause" onClick={this.props.handleSongClick} >
            <span className={this.props.isPlaying ? 'ion-pause' : 'ion-play'}></span>
-           </button>
+           </button>pro
            <button id="next" onClick={this.props.handleNextClick}>
              <span className="ion-skip-forward"></span>
            </button>
@@ -18,7 +18,7 @@ class PlayerBar extends Component{
          <section id="time-control">                                                                    
            <div className="current-time">{this.props.formatTime(this.props.currentTime)}</div>
             <input
-              type="range"
+              type="range"pro
               className="seek-bar" 
               value={(this.props.currentTime / this.props.duration) || 0}
               max="1"

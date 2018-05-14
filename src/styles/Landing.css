@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic');
+
+.landing{
+    font-family: 'Gentium Book Basic', serif;
+
+    text-align: center;
+    color: #cacaca;
+}
+
+
+
+  .hero-title {
+      color: teal;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+  
+  .point-title {
+    
+    font-size: 2em;
+    margin-bottom: 1.5em;
+  }
+  
+  .point-description {
+    
+    font-size: 1.25em;
+  }
+  
+  .point .custom-icon {
+    font-size: 48px;
+    text-align: center;
+  }
