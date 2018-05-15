@@ -1,9 +1,13 @@
 .App header nav {
   text-align: center;
   font-size: 1.5em;
-  padding-top: .5em;
   background-color: rgba(51,51,51,0.6);
   overflow: auto;
+  position: fixed;
+  top:0;
+  width:100%;
+  padding-top: 5px;
+  
 }
 
 .App-logo{
@@ -21,16 +25,19 @@
   float: right;
 }
 
-a:hover, a:active, a:visited, a:focus {
-  text-decoration: none;
-}
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .app-title {
+margin-top: 2em;
   color: #e0d6e6;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 4.75em;
-  margin-top: .7em;
+  font-size: 3.75em;
+  
 }
 
 

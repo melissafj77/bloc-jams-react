@@ -1,0 +1,129 @@
+#album-info{
+  display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column wrap;
+    -webkit-flex-flow: column wrap ;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.album-details {
+  order: 1;
+  text-align: center;
+  margin-bottom: 1em;
+  
+  color: rgb(2, 73, 73);
+}
+
+
+#album-title {
+  font-size: 2em;
+  padding-top: 0;
+  margin-top:0;
+}
+
+
+.artist, #release-info {
+  font-size: 1.2em;
+  margin: -.2em;
+}
+
+
+#album-cover-art {
+  order: 2;
+  width: 45%;
+  height: 45%;
+margin: 0 auto;
+}
+
+.song-button, .ion-pause, .ion-play, .song-number {
+
+  font-size: 1.em;
+  color: #F3006A;
+}
+ #song-list{
+margin: 0 auto;
+width: 80%;
+text-align: center;
+margin-bottom: 2em;
+font-size: 1rem;
+  border-top: .5rem solid rgba(230, 174, 47, .5);
+  border-left: .75rem solid rgba(255, 108, 108, .5);
+  border-bottom: .75rem solid rgb(255, 108, 108);
+  border-right: .75rem solid rgb(230, 174, 47);
+  background-color: rgba(236, 248, 255, 0.77);
+ }
+ 
+tr:hover {
+  cursor: pointer;
+}
+
+.table > tbody > tr > td {
+  vertical-align: middle;
+}
+td{
+
+  border-top: .25rem solid rgba(230, 174, 47, .5); 
+ }
+  @media only screen and (min-width: 768px){
+    .lg-album{
+      display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin:5% 20% -3%;
+    }
+    
+    #album-info{
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    margin-right: 5%;
+  }
+
+  #album-title {
+    font-size: 2rem;
+  }
+  
+  .album-details {
+    order: 2;
+  
+  }
+  
+  .artist {
+    font-size: 1rem;
+  }
+  
+  #release-info {
+    font-size: .75rem;
+  }
+  
+  #album-cover-art {
+    order: 1;
+    width: 50%;
+  height: 50%;
+  }
+
+  #song-list{
+    
+  }
+  td{
+    padding-right: 3%;
+  }
+}
+

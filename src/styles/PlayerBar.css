@@ -1,0 +1,66 @@
+.player-bar {
+    width: 80%;
+    text-align: center;
+    margin:0 auto;
+  }
+  
+  #buttons {
+    font-size: 1.75em;
+    isplay: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    justify-content: space-between;
+    
+  }
+  .ion-skip-backward, .ion-skip-forward, .ion-volume-high, .ion-volume-low{
+    color: #F3006A;
+  }
+
+  #time-control, #volume-control {
+    margin: 0 auto;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+    
+  
+
+  
+#time-control input{
+width: 55%;
+} 
+#volume-control input {
+ width: 55%;
+  
+}
+
+
+#volume-control .icon{
+  font-size: 1.75em;
+} 
+.current-time, .total-time {
+font-size: 1.10em;
+}
+
+
+.current-time {
+  
+ 
+  
+}
+
+.total-time {
+  
+  
+  
+} 
