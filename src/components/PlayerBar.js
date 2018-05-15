@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '/home/melissa/bloc/bloc-jams-react/src/styles/PlayerBar.css';
+import './styles/PlayerBar.css';
 class PlayerBar extends Component{
     render(){
         return(
