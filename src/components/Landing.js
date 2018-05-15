@@ -1,5 +1,5 @@
 import React from 'react';
-import '/home/melissa/bloc/bloc-jams-react/src/styles/Landing.css'
+import './styles/Landing.css'
 
 const Landing = () => (
   <section className="landing">
