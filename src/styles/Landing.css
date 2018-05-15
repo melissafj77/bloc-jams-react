@@ -18,15 +18,21 @@
   .point-title {
     
     font-size: 2em;
-    margin-bottom: 1.5em;
+   
   }
   
   .point-description {
     
     font-size: 1.25em;
   }
+  .point {
   
-  .point .custom-icon {
-    font-size: 48px;
-    text-align: center;
+    
+    
+    margin:0;
+  
+  
+    
+   
+    text-shadow: .5px .5px 1px black;
   }

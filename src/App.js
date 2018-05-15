@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <nav>
+          <nav className="group">
           <img src={logo} className="App-logo" alt="logo" />
              <Link className ="link"to='/'>Landing</Link>
              <Link className="link"to='/library'>Library</Link>
